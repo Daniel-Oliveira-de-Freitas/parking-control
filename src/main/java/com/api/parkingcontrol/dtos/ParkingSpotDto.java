@@ -2,13 +2,14 @@ package com.api.parkingcontrol.dtos;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.time.LocalDateTime;
 
 public class ParkingSpotDto {
     @NotBlank
     private String parkingSpotNumber;
     @NotBlank
     @Size (max = 7)
-    private String licencePlateCar;
+    private String licensePlateCar;
     @NotBlank
     private String brandCar;
     @NotBlank
@@ -22,6 +23,7 @@ public class ParkingSpotDto {
     @NotBlank
     private String block;
 
+
     public String getParkingSpotNumber() {
         return parkingSpotNumber;
     }
@@ -30,12 +32,12 @@ public class ParkingSpotDto {
         this.parkingSpotNumber = parkingSpotNumber;
     }
 
-    public String getLicencePlateCar() {
-        return licencePlateCar;
+    public String getLicensePlateCar() {
+        return licensePlateCar;
     }
 
-    public void setLicencePlateCar(String licencePlateCar) {
-        this.licencePlateCar = licencePlateCar;
+    public void setLicensePlateCar(String licencePlateCar) {
+        this.licensePlateCar = licencePlateCar;
     }
 
     public String getBrandCar() {
